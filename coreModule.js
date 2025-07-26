@@ -11,10 +11,11 @@ console.log('Husban');
 // Non-Global Core Module Exp:
 
 // Create instance myFile and import 'fs' module
-const myFile = require('fs')
-console.log('Node Js Core Module');
+const myFile = require('fs').writeFileSync
+// console.log('Node Js Core Module');
 
 // writeFileSync : create file  
 
 //                    your file name ,  what write in file     
-myFile.writeFileSync('coreModule.txt','Global and Non-Global Core Module')
+// myFile.writeFileSync('coreModule.txt','Global and Non-Global Core Module')
+myFile('coreModule.txt','Global and Non-Global Core Module')
